@@ -5,7 +5,6 @@
     "main": "index.js",
     "scripts": {
       "start": "nodemon index.ts",
-      "test": "jest --testTimeout=30000",
       "dev:server": "nodemon --watch './**/*.ts' --exec 'node --experimental-specifier-resolution=node ts-node/esm' index.ts"
     },
     "author": "",
