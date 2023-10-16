@@ -1,6 +1,7 @@
 import { type } from "os";
-import { DateLimitMode, FileTypesMode, NumberLimitMode, OptionConfig, OptionType, OptionValue, ProductListShippingCalc } from "./products";
+import { DateLimitMode, FileTypesMode, NumberLimitMode, OptionConfig, OptionType, OptionValue, ProductListShippingCalc } from "./product";
 import { ArrayEnvelope, Envelope, V3Meta } from "./shared";
+
 
 export type UpsertOptionConfigRequest= {
     default_value?: string;
