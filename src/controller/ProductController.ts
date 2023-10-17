@@ -59,7 +59,8 @@ export const createCatalogProduct = async function (req: Request, res: Response)
                     if (data) {
                         return res.status(200).send({
                             message: "success123",
-                            env: process.env["DEV_BC_API_STORE_HASH"],
+                            value: process.env["DEV_BC_API_STORE_HASH"],
+                            test:"testing",
                             status: 200,
                             data: data,
                             error:error
