@@ -30,9 +30,10 @@ const environmentBcClientOptionsMap = new Map<string, BigCommerceClientOptions>(
 export const createCatalogProduct = async function (req: Request, res: Response) {
     try {
         const errors = validationResult(req)
+        console.log('hello',errors);
         if (errors.isEmpty()) {
             var body = req.body;
-            // console.log(req.body)
+            console.log(req.body);
             const type = req.body.type
             const vintageProducts = req.body.product;
             const keywords:boolean =req.body.keywords;
