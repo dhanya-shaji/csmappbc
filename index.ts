@@ -23,7 +23,7 @@ var CategoryRouter = require("./src/routes/CategoryRouter");
 app.use("/product",ProductValidator, productRouter);
 app.use("/categories", CategoryRouter);
 
-const port = 3000;
+const port = 80;
 
 app.listen(port, () => {
     console.log(`API server listening on port ${port}`);
