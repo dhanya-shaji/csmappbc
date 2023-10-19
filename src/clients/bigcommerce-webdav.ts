@@ -21,14 +21,14 @@ export class WebDavClient {
 
 
     constructor() {
-        this._url = process.env["WEBDAV_URL"] || "https://store-94bastr1it.mybigcommerce.com/dav";
+        this._url = process.env["WEBDAV_URL"];
         let user = process.env["WEBDAV_USER"];
         let pass = process.env["WEBDAV_PASS"];
 
-        this._client = createClient("https://collections.harley-davidson.com/dav", {
+         this._client = createClient(this._url, {
             authType: AuthType.Digest,
-            username: "dhanya.shaji@harley-davidson.com",
-            password: "11567603ee288fbaf2592a435ea488a24a410b57"
+            username: user,
+            password: pass
         });
     }
 
